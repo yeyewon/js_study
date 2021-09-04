@@ -15,15 +15,38 @@
       // ****
       // *****
       // 위 형태의 별을 출력해 보자
+
+      // star = () => {
+      //   let input = '';
+
+      //   for(let i=0; i<5; i++){
+      //     input += '*';
+      //     console.log(input);
+      //   }
+      // }
+      // star();
+
+      // 중첩
       star = () => {
         let input = '';
 
-        for(let i=1; i<=5; i++){
-          input += '*';
-          console.log(input);
+        for(let i=0; i<5; i++){
+          for(let j=0; j<=i; j++){
+            input += '*';
+          }
+          input += '\n';
         }
+        console.log(input);
       }
       star();
+
+      // .repeat() : 문자열 반복 함수
+      repeatStar = () => {
+        for(let i=1; i<=5; i++){
+          console.log('*'.repeat(i));
+        }
+      }
+      repeatStar();
     </script>
   </body>
 </html>

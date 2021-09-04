@@ -15,6 +15,31 @@
       //  ****
       // *****
       // 위 형태의 별을 출력해 보자
+
+      rightStar = () => {
+        let input = '';
+
+        for(let i=1; i<=5; i++){
+          // 공백
+          for(let j=5; j>=i; j--){
+            input += ' ';
+          }
+          // 별
+          for(let k=1; k<=i; k++){
+            input += '*';
+          }
+          input += '\n';
+        }
+        console.log(input);
+      }
+      rightStar();
+
+      repeatStar = () => {
+        for(let i=1; i<=5; i++){
+          console.log(' '.repeat(5-i) + '*'.repeat(i));
+        }
+      }
+      repeatStar();
     </script>
   </body>
 </html>

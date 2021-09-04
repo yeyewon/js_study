@@ -15,6 +15,29 @@
       //    **
       //     *
       // 위 형태의 별을 출력해 보자
+
+      upsideRight = () => {
+        let input = '';
+
+        for(let i=1; i<=5; i++){
+          for(let k=1; k<i; k++){
+            input += ' ';
+          }
+          for(let j=5; j>=i; j--){
+            input += '*';
+          }
+          input += '\n';
+        }
+        console.log(input);
+      }
+      upsideRight();
+
+      upsideRightRepeat = () => {
+        for(let i=0; i<=5; i++){
+          console.log(' '.repeat(i) + '*'.repeat(5-i));
+        }
+      }
+      upsideRightRepeat();
     </script>
   </body>
 </html>
